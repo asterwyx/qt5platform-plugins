@@ -1,3 +1,132 @@
+dde-qt5platform-plugins (5.7.8) unstable; urgency=medium
+
+  [ root ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Tue, 14 Jan 2025 11:17:31 +0000
+
+dde-qt5platform-plugins (5.7.7) unstable; urgency=medium
+
+  * chore: mips64 disable compile unit test binaries mips64 disable compile unit test binaries
+  * 	fix: after setting the cursor theme, it will not update in real-time.
+  * fix: DNotitlebarWindowHelper can't be removed from mapped
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 09 Jan 2025 09:28:39 +0000
+
+dde-qt5platform-plugins (5.7.6) unstable; urgency=medium
+
+  [ root ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 02 Jan 2025 05:43:52 +0000
+
+dde-qt5platform-plugins (5.7.5) unstable; urgency=medium
+
+  * fix: app crashed when QBytearray reallocated
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 12 Dec 2024 03:03:54 +0000
+
+dde-qt5platform-plugins (5.7.4) unstable; urgency=medium
+
+  * fix: app crashed when window destroyed in quick
+  * fix: hasVtable is incorrect when destructing
+  * fix: app crashed when window destroyed in quick
+
+ -- Deepin Packages Builder <packages@deepin.org>  Tue, 03 Dec 2024 02:00:46 +0000
+
+dde-qt5platform-plugins (5.7.3) unstable; urgency=medium
+
+  [ root ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Wed, 20 Nov 2024 02:19:06 +0000
+
+dde-qt5platform-plugins (5.7.2) unstable; urgency=medium
+
+  [ root ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Wed, 13 Nov 2024 01:53:26 +0000
+
+dde-qt5platform-plugins (5.7.1) unstable; urgency=medium
+
+  * fix: 向日葵中点击文管窗口标题时直接进入移动窗口状态(Bug: 261679)(Influence: 窗口移动)
+  * fix: 共享库二进制兼容(Bug: 261679)
+  * fix: incorect window movement when selecting files(Issue: https://github.com/linuxdeepin/developer-center/issues/10165)
+
+ -- Deepin Packages Builder <packages@deepin.org>  Wed, 16 Oct 2024 03:30:45 +0000
+
+dde-qt5platform-plugins (5.6.34) unstable; urgency=medium
+
+  * feat: support to change window effects(Bug: 244347)
+  * fix: compl error in deepin
+  * chore: code style
+
+ -- Deepin Packages Builder <packages@deepin.org>  Tue, 20 Aug 2024 05:03:51 +0000
+
+dde-qt5platform-plugins (5.6.32) unstable; urgency=medium
+
+  * fix: window border properties cannot change in real time(Issue: https://github.com/linuxdeepin/developer-center/issues/8342)(Influence: 边界颜色,边框宽度,阴影颜色,偏移量等窗口属性能实时变化)
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 08 Jul 2024 02:29:21 +0000
+
+dde-qt5platform-plugins (5.6.31) unstable; urgency=medium
+
+  * feat: support to qt 6.7.1
+  * fix: change qt_assert to Q_ASSERT (#246)
+    Thanks to Whale107
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 27 Jun 2024 09:11:34 +0000
+
+dde-qt5platform-plugins (5.6.30) unstable; urgency=medium
+
+  [ root ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 30 May 2024 02:46:31 +0000
+
+dde-qt5platform-plugins (5.6.29) unstable; urgency=medium
+
+  [ root ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 13 May 2024 03:02:54 +0000
+
+dde-qt5platform-plugins (5.6.28) unstable; urgency=medium
+
+  * fix: Need link Qt6DBus library
+    Thanks to Hillwood Yang
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 29 Apr 2024 08:23:39 +0000
+
+dde-qt5platform-plugins (5.6.27) unstable; urgency=medium
+
+  * fix: BlurArea unpack error in qt5
+  * fix: 修复阴影补偿属性无法设置的问题(Bug: 242761)(Influence: 阴影补偿属性)
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 19 Apr 2024 08:55:35 +0000
+
+dde-qt5platform-plugins (5.6.26) unstable; urgency=medium
+
+  [ root ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Tue, 26 Mar 2024 05:47:35 +0000
+
+dde-qt5platform-plugins (5.6.25) unstable; urgency=medium
+
+  * another clean fix for #231 (#232)
+    Thanks to Keeyou
+  * chore: avoid build error
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 11 Mar 2024 01:16:26 +0000
+
+dde-qt5platform-plugins (5.6.22) unstable; urgency=medium
+
+  * fix #7057
+
+ -- Mike Chen <chenke@deepin.org>  Thu, 25 Jan 2024 16:14:18 +0800
+
 dde-qt5platform-plugins (5.6.21) unstable; urgency=medium
 
   * release 5.6.21

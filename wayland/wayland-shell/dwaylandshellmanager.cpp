@@ -186,7 +186,7 @@ void DWaylandShellManager::sendProperty(QWaylandShellSurface *self, const QStrin
 
     if (auto *dde_shell_surface = ensureDDEShellSurface(self)) {
         if (!name.compare(noTitlebar)) {
-            qCDebug(dwlp()) << "### requestNoTitleBar" << value;
+            qCDebug(dwlp()) << "Request NoTitleBar, value: " << value;
             dde_shell_surface->requestNoTitleBarProperty(value.toBool());
         }
         if (!name.compare(windowRadius)) {
@@ -194,7 +194,7 @@ void DWaylandShellManager::sendProperty(QWaylandShellSurface *self, const QStrin
             qreal radius  = value.toInt(&ok);
             if (wlWindow->screen())
                 radius *= wlWindow->screen()->devicePixelRatio();
-            qCDebug(dwlp()) << "### requestWindowRadius" << radius << value;
+            qCDebug(dwlp()) << "Rquest window radius, value: " << radius << value;
             if (ok)
                 dde_shell_surface->requestWindowRadiusProperty({radius, radius});
             else
@@ -659,7 +659,11 @@ void DWaylandShellManager::handleWindowStateChanged(QWaylandShellSurface *shellS
     STATE_CHANGED(activeChanged);
     QObject::connect(ddeShellSurface, &KCDFace::activeChanged, window, [window, ddeShellSurface](){
         if (QWindow *w = ddeShellSurface->isActive() ? window->window() : nullptr)
+#if QT_VERSION < QT_VERSION_CHECK(6, 7, 0)
             QWindowSystemInterface::handleWindowActivated(w, Qt::FocusReason::ActiveWindowFocusReason);
+#else
+            QWindowSystemInterface::handleFocusWindowChanged(w, Qt::FocusReason::ActiveWindowFocusReason);
+#endif
     });
 
 #define SYNC_FLAG(sig, enableFunc, flag)                                                    \
